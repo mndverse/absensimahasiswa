@@ -15,9 +15,12 @@
       praktis dan terstruktur.
     </p>
 
-   <a class="tombol-absensi" href="/absensimahasiswa/mahasiswa">
-  Mulai Catat Kehadiran
-   </a>
+    <a
+      class="tombol-absensi"
+      href="/absensimahasiswa/#/mahasiswa"
+    >
+      Mulai Catat Kehadiran
+    </a>
 
     <p class="catatan-beranda">
       Pencatatan kehadiran mahasiswa dalam satu aplikasi.
