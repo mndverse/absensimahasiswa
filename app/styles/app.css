@@ -1363,3 +1363,20 @@ main {
     padding: 22px 18px;
   }
 }
+.tombol-absensi {
+  display: inline-block;
+  padding: 12px 28px;
+  margin-top: 12px;
+  background-color: #176b4d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.tombol-absensi:hover {
+  background-color: #10543b;
+  color: white;
+}

@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <a href="/">Beranda</a>
-    <a href="/mahasiswa">Mahasiswa</a>
-    <a href="/tentang">Tentang</a>
+    <a href="/absensimahasiswa/">Beranda</a>
+    <a href="/absensimahasiswa/mahasiswa">Mahasiswa</a>
+    <a href="/absensimahasiswa/tentang">Tentang</a>
   </nav>
 
   <main>

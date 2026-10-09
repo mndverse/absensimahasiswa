@@ -3,7 +3,7 @@ import config from 'absensi-mahasiswa/config/environment';
 
 export default class Router extends EmberRouter {
   location = config.locationType;
-  rootURL = config.rootURL;
+  rootURL = '/absensimahasiswa/';
 }
 
 Router.map(function () {

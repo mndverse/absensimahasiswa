@@ -1,7 +1,7 @@
 import loadConfigFromMeta from '@embroider/config-meta-loader';
 import { assert } from '@ember/debug';
 
-const config = loadConfigFromMeta('tugas-ember');
+const config = loadConfigFromMeta('absensi-mahasiswa');
 
 assert(
   'config is not an object',
