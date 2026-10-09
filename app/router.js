@@ -2,7 +2,7 @@ import EmberRouter from '@embroider/router';
 import config from 'absensi-mahasiswa/config/environment';
 
 export default class Router extends EmberRouter {
-  location = config.locationType;
+  location = 'hash';
   rootURL = '/absensimahasiswa/';
 }
 
