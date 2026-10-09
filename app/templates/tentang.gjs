@@ -46,10 +46,7 @@
         aplikasi digunakan. Penyimpanan permanen memerlukan integrasi
         dengan media penyimpanan atau basis data.
       </p>
-
-      <a href="/mahasiswa" class="tombol">
-        Buka Daftar Hadir
-      </a>
+      
     </div>
   </section>
 </template>
