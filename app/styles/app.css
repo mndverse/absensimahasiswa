@@ -1,0 +1,1365 @@
+.beranda {
+  text-align: center;
+}
+
+.ringkasan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 35px 0;
+}
+
+.kartu {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 150px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.kartu h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.kartu p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f6639;
+  margin: 0;
+}
+
+.tombol {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #1f6639;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.tombol:hover {
+  background-color: #15502c;
+  color: white;
+}
+/* HALAMAN DAFTAR HADIR */
+.absensi {
+  padding: 25px;
+}
+
+.absensi h1 {
+  margin-bottom: 10px;
+}
+
+.deskripsi {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+/* FORMULIR */
+.form-absensi {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 25px 0 35px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.form-absensi h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #9ac8a9;
+  border-color: #1f6639;
+}
+
+.aksi-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.tombol-batal {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #777777;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* JUDUL TABEL */
+.judul-tabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.judul-tabel h2 {
+  margin: 0;
+}
+
+.judul-tabel span {
+  color: #555555;
+  font-weight: 600;
+}
+
+/* TABEL */
+.tabel-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.tabel-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.tabel-container th,
+.tabel-container td {
+  padding: 13px;
+  border: 1px solid #eeeeee;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.tabel-container th {
+  background: #1f6639;
+  color: #ffffff;
+}
+
+.tabel-container tbody tr:hover {
+  background: #f5faf6;
+}
+
+.kosong {
+  text-align: center !important;
+  padding: 25px !important;
+  color: #777777;
+}
+
+/* STATUS KEHADIRAN */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status.Hadir {
+  background: #d9f3e1;
+  color: #176534;
+}
+
+.status.Izin {
+  background: #fff0c2;
+  color: #8a6100;
+}
+
+.status.Sakit {
+  background: #dceaff;
+  color: #174e9b;
+}
+
+.status.Alpa {
+  background: #ffe0e0;
+  color: #a51f1f;
+}
+
+/* TOMBOL AKSI */
+.tombol-edit,
+.tombol-hapus {
+  padding: 7px 11px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.tombol-edit {
+  background: #d99a16;
+}
+
+.tombol-edit:hover {
+  background: #b57b08;
+}
+
+.tombol-hapus {
+  background: #c0392b;
+}
+
+.tombol-hapus:hover {
+  background: #962d22;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 700px) {
+  .absensi {
+    padding: 15px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-absensi {
+    padding: 18px;
+  }
+
+  .judul-tabel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tabel-container th,
+  .tabel-container td {
+    padding: 10px;
+  }
+}
+/* BERANDA */
+.beranda {
+  max-width: 850px;
+  margin: 55px auto;
+  padding: 55px 35px;
+  background: #ffffff;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.ikon-beranda {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e2f2e7;
+  color: #1f6639;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.label-beranda {
+  color: #1f6639;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.beranda h1 {
+  color: #1f6639;
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.deskripsi-beranda {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #555555;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.tombol-beranda {
+  margin-top: 30px;
+  padding: 14px 25px;
+}
+
+.catatan-beranda {
+  margin-top: 30px;
+  color: #888888;
+  font-size: 13px;
+}
+
+/* HALAMAN TENTANG */
+.tentang {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+.tentang-header {
+  padding: 35px 25px;
+  background: #e7f3ea;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.tentang-header h1 {
+  color: #1f6639;
+  margin: 15px 0;
+}
+
+.tentang-header > p:last-child {
+  color: #555555;
+}
+
+.tentang-konten {
+  margin-top: 25px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  line-height: 1.8;
+}
+
+.tentang-konten h2 {
+  color: #1f6639;
+  margin-top: 25px;
+}
+
+.tentang-konten h2:first-child {
+  margin-top: 0;
+}
+
+.tentang-konten li {
+  margin-bottom: 8px;
+}
+
+/* TAMPILAN RESPONSIF */
+@media (max-width: 600px) {
+  .beranda {
+    margin: 25px 15px;
+    padding: 35px 20px;
+  }
+
+  .beranda h1 {
+    font-size: 27px;
+  }
+
+  .deskripsi-beranda {
+    font-size: 15px;
+  }
+
+  .tentang {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .tentang-konten {
+    padding: 20px;
+  }
+}
+/* =========================================
+   TAMPILAN MODERN SISTEM DAFTAR HADIR
+   ========================================= */
+
+:root {
+  --hijau-tua: #185c37;
+  --hijau: #27864f;
+  --hijau-muda: #e8f5ec;
+  --putih: #ffffff;
+  --latar: #f5f8f6;
+  --teks: #26372c;
+  --teks-abu: #78847b;
+  --garis: #e5ece7;
+  --bayangan: 0 8px 28px rgba(29, 75, 46, 0.07);
+}
+
+/* Tampilan dasar */
+body {
+  margin: 0;
+  background: var(--latar);
+  color: var(--teks);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 18px 24px;
+  background: var(--putih);
+  border-bottom: 1px solid var(--garis);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.025);
+}
+
+nav a {
+  padding: 10px 20px;
+  color: #52645a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  background: var(--hijau-muda);
+  color: var(--hijau-tua);
+}
+
+/* Area halaman */
+main {
+  min-height: 85vh;
+  padding: 25px 20px 50px;
+}
+
+/* Judul halaman */
+.judul-halaman {
+  margin-bottom: 28px;
+}
+
+.judul-halaman h1 {
+  margin: 0 0 8px;
+  color: var(--hijau-tua);
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+}
+
+.judul-halaman p,
+.judul-tabel p {
+  margin: 0;
+  color: var(--teks-abu);
+  font-size: 14px;
+}
+
+/* Halaman absensi */
+.absensi {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Formulir */
+.form-absensi {
+  padding: 30px;
+  margin-bottom: 35px;
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: 18px;
+  box-shadow: var(--bayangan);
+}
+
+.form-absensi h2,
+.judul-tabel h2 {
+  margin: 0 0 24px;
+  color: var(--hijau-tua);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #394b3f;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.form-group input,
+.form-group select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  color: var(--teks);
+  background: #fcfdfc;
+  border: 1px solid #dce6df;
+  border-radius: 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--hijau);
+  box-shadow: 0 0 0 3px rgba(39, 134, 79, 0.12);
+}
+
+.form-group input::placeholder {
+  color: #a1aca4;
+}
+
+/* Tombol formulir */
+.aksi-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.tombol,
+.tombol-batal,
+.tombol-edit,
+.tombol-hapus {
+  border: none;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tombol {
+  padding: 13px 22px;
+  color: white;
+  background: var(--hijau);
+  box-shadow: 0 4px 10px rgba(39, 134, 79, 0.15);
+}
+
+.tombol:hover {
+  background: var(--hijau-tua);
+  transform: translateY(-1px);
+}
+
+.tombol-batal {
+  padding: 13px 22px;
+  color: #52645a;
+  background: #edf1ee;
+}
+
+.tombol-batal:hover {
+  background: #dfe7e1;
+}
+
+/* Bagian judul tabel */
+.judul-tabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.judul-tabel h2 {
+  margin-bottom: 5px;
+}
+
+.judul-tabel > span {
+  padding: 9px 15px;
+  color: var(--hijau-tua);
+  background: var(--hijau-muda);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Tabel kehadiran */
+.tabel-container {
+  overflow-x: auto;
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: 16px;
+  box-shadow: var(--bayangan);
+}
+
+.tabel-container table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabel-container thead {
+  background: #fbfdfc;
+}
+
+.tabel-container th {
+  padding: 16px 14px;
+  color: var(--hijau-tua);
+  background: #0f3b10;
+  font-size: 12px;
+  font-weight: 750;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--garis);
+}
+
+.tabel-container td {
+  padding: 15px 14px;
+  color: #4d5b51;
+  font-size: 13px;
+  border-bottom: 1px solid #eef2ef;
+}
+
+.tabel-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabel-container tbody tr:hover {
+  background: #f8fbf8;
+}
+
+.tabel-container td:first-child {
+  color: var(--hijau-tua);
+  font-weight: 700;
+}
+
+.kosong {
+  padding: 40px 20px !important;
+  color: #8a968d !important;
+  text-align: center;
+}
+
+/* Label status kehadiran */
+.status {
+  display: inline-block;
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.status.Hadir {
+  color: #197044;
+  background: #dcf5e5;
+}
+
+.status.Izin {
+  color: #94610b;
+  background: #fff0c9;
+}
+
+.status.Sakit {
+  color: #2862a1;
+  background: #e1efff;
+}
+
+.status.Alpa {
+  color: #b23b3b;
+  background: #ffe5e5;
+}
+
+/* Tombol aksi pada tabel */
+.tombol-edit {
+  padding: 8px 12px;
+  margin-right: 5px;
+  color: #2269a5;
+  background: #e5f1ff;
+}
+
+.tombol-edit:hover {
+  background: #cfe5ff;
+}
+
+.tombol-hapus {
+  padding: 8px 12px;
+  color: #b63838;
+  background: #ffe8e8;
+}
+
+.tombol-hapus:hover {
+  background: #ffd4d4;
+}
+
+/* Beranda */
+.beranda {
+  max-width: 850px;
+  margin: 35px auto;
+  padding: 55px 35px;
+  background: white;
+  border: 1px solid var(--garis);
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: var(--bayangan);
+}
+
+.ikon-beranda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 24px;
+  color: var(--hijau);
+  background: var(--hijau-muda);
+  border-radius: 24px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.label-beranda {
+  color: var(--hijau);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.beranda h1 {
+  margin: 14px 0;
+  color: var(--hijau-tua);
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+.deskripsi-beranda {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #68756c;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.tombol-beranda {
+  display: inline-block;
+  margin-top: 28px;
+  text-decoration: none;
+}
+
+.catatan-beranda {
+  margin-top: 28px;
+  color: #929d94;
+  font-size: 12px;
+}
+
+/* Halaman Tentang */
+.tentang {
+  max-width: 950px;
+  margin: 30px auto;
+}
+
+.tentang-header {
+  padding: 38px 25px;
+  background: #e8f5ec;
+  border: 1px solid #d9ecde;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.tentang-header h1 {
+  margin: 12px 0;
+  color: var(--hijau-tua);
+}
+
+.tentang-header > p:last-child {
+  color: #637269;
+}
+
+.tentang-konten {
+  margin-top: 22px;
+  padding: 30px;
+  background: white;
+  border: 1px solid var(--garis);
+  border-radius: 18px;
+  box-shadow: var(--bayangan);
+  line-height: 1.9;
+}
+
+.tentang-konten h2 {
+  margin-top: 25px;
+  color: var(--hijau-tua);
+}
+
+.tentang-konten h2:first-child {
+  margin-top: 0;
+}
+
+.tentang-konten li {
+  margin-bottom: 8px;
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+  main {
+    padding: 18px 12px 35px;
+  }
+
+  nav {
+    gap: 4px;
+    padding: 12px 8px;
+  }
+
+  nav a {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+
+  .absensi {
+    margin: 12px auto;
+  }
+
+  .judul-halaman h1 {
+    font-size: 25px;
+  }
+
+  .form-absensi {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .form-absensi h2,
+  .judul-tabel h2 {
+    font-size: 19px;
+  }
+
+  .judul-tabel {
+    align-items: flex-start;
+  }
+
+  .beranda {
+    margin: 15px auto;
+    padding: 38px 20px;
+    border-radius: 17px;
+  }
+
+  .beranda h1 {
+    font-size: 28px;
+  }
+
+  .deskripsi-beranda {
+    font-size: 14px;
+  }
+
+  .tentang {
+    margin: 12px auto;
+  }
+
+  .tentang-konten {
+    padding: 22px 18px;
+  }
+}
+/* =========================================
+   DESAIN MODERN SISTEM DAFTAR HADIR
+   ========================================= */
+
+:root {
+  --hijau-tua: #176344;
+  --hijau: #218653;
+  --hijau-hover: #124c34;
+  --hijau-muda: #e7f5ec;
+  --putih: #ffffff;
+  --latar: #f0f7f4;
+  --teks: #263b32;
+  --teks-abu: #708078;
+  --garis: #e1ebe5;
+  --bayangan: 0 5px 20px rgba(23, 99, 68, 0.07);
+}
+
+/* Tampilan halaman */
+body {
+  margin: 0;
+  background: var(--latar);
+  color: var(--teks);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 18px 24px;
+  background: var(--putih);
+  border-bottom: 1px solid var(--garis);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+nav a {
+  padding: 10px 20px;
+  color: #52675b;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 12px;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  background: var(--hijau-muda);
+  color: var(--hijau-tua);
+}
+
+/* Area konten */
+main {
+  min-height: 85vh;
+  padding: 25px 20px 45px;
+}
+
+/* Judul halaman */
+.judul-halaman {
+  margin-bottom: 25px;
+}
+
+.judul-halaman h1 {
+  margin: 0 0 8px;
+  color: var(--hijau-tua);
+  font-size: 30px;
+  font-weight: 750;
+}
+
+.judul-halaman p {
+  color: var(--teks-abu);
+  font-size: 14px;
+}
+
+/* Halaman absensi */
+.absensi {
+  max-width: 1450px;
+  margin: 15px auto;
+  padding: 0;
+}
+
+/* Kartu formulir */
+.form-absensi {
+  padding: 30px;
+  margin-bottom: 30px;
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: 20px;
+  box-shadow: var(--bayangan);
+}
+
+.form-absensi h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--hijau-tua);
+  font-size: 22px;
+}
+
+/* Susunan formulir */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.form-group label {
+  color: #315345;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.form-group input,
+.form-group select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 47px;
+  padding: 12px 14px;
+  color: var(--teks);
+  background: #ffffff;
+  border: 1px solid #d8e5dd;
+  border-radius: 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--hijau);
+  box-shadow: 0 0 0 3px rgba(33, 134, 83, 0.12);
+}
+
+/* Tombol formulir */
+.aksi-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.tombol,
+.tombol-batal,
+.tombol-edit,
+.tombol-hapus {
+  border: none;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Tombol simpan */
+.tombol {
+  padding: 13px 22px;
+  color: #ffffff;
+  background: var(--hijau);
+  box-shadow: 0 4px 10px rgba(33, 134, 83, 0.15);
+}
+
+.tombol:hover {
+  background: var(--hijau-hover);
+  transform: translateY(-1px);
+}
+
+/* Tombol batal/reset */
+.tombol-batal {
+  padding: 13px 22px;
+  color: #40574b;
+  background: #e8eeea;
+}
+
+.tombol-batal:hover {
+  background: #dce6df;
+}
+
+/* Bagian judul tabel */
+.judul-tabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.judul-tabel h2 {
+  margin: 0;
+  color: var(--hijau-tua);
+  font-size: 22px;
+}
+
+/* Kartu tabel */
+.tabel-container {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: 16px;
+  box-shadow: var(--bayangan);
+}
+
+.tabel-container table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* HEADER TABEL: HIJAU TUA */
+.tabel-container thead {
+  background: var(--hijau-tua);
+}
+
+.tabel-container th {
+  padding: 17px 15px;
+  color: #ffffff;
+  background: var(--hijau-tua);
+  font-size: 13px;
+  font-weight: 750;
+  white-space: nowrap;
+  border: none;
+}
+
+/* Sudut atas header */
+.tabel-container thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.tabel-container thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* Isi tabel */
+.tabel-container td {
+  padding: 15px;
+  color: #344c40;
+  font-size: 13px;
+  border-bottom: 1px solid #edf2ee;
+  border-right: 1px solid #edf2ee;
+  white-space: nowrap;
+}
+
+.tabel-container td:last-child {
+  border-right: none;
+}
+
+.tabel-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabel-container tbody tr:hover {
+  background: #f5faf6;
+}
+
+/* Nomor urut */
+.tabel-container td:first-child {
+  color: var(--hijau-tua);
+  font-weight: 700;
+}
+
+/* Data kosong */
+.kosong {
+  padding: 40px 20px !important;
+  color: #8a968d !important;
+  text-align: center;
+}
+
+/* Label status */
+.status {
+  display: inline-block;
+  padding: 6px 13px;
+  border-radius: 22px;
+  font-size: 12px;
+  font-weight: 750;
+  text-align: center;
+}
+
+/* Status hadir */
+.status.Hadir {
+  color: #16804b;
+  background: #dff5e7;
+}
+
+/* Status izin */
+.status.Izin {
+  color: #a66a00;
+  background: #fff2d4;
+}
+
+/* Status sakit */
+.status.Sakit {
+  color: #2365b0;
+  background: #e3efff;
+}
+
+/* Status alpa */
+.status.Alpa {
+  color: #c42f2f;
+  background: #ffe4e4;
+}
+
+/* Tombol edit */
+.tombol-edit {
+  padding: 9px 12px;
+  margin-right: 5px;
+  color: #ffffff;
+  background: #f2a51a;
+}
+
+.tombol-edit:hover {
+  background: #d88a08;
+}
+
+/* Tombol hapus */
+.tombol-hapus {
+  padding: 9px 12px;
+  color: #ffffff;
+  background: #e53935;
+}
+
+.tombol-hapus:hover {
+  background: #c62828;
+}
+
+/* Halaman beranda */
+.beranda {
+  max-width: 850px;
+  margin: 35px auto;
+  padding: 55px 35px;
+  background: #ffffff;
+  border: 1px solid var(--garis);
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: var(--bayangan);
+}
+
+.beranda h1 {
+  color: var(--hijau-tua);
+}
+
+.ikon-beranda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 24px;
+  color: var(--hijau);
+  background: var(--hijau-muda);
+  border-radius: 24px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.label-beranda {
+  color: var(--hijau);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.deskripsi-beranda {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #68756c;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.tombol-beranda {
+  display: inline-block;
+  margin-top: 28px;
+  text-decoration: none;
+}
+
+.catatan-beranda {
+  margin-top: 28px;
+  color: #929d94;
+  font-size: 12px;
+}
+
+/* Halaman tentang */
+.tentang {
+  max-width: 950px;
+  margin: 30px auto;
+}
+
+.tentang-header {
+  padding: 38px 25px;
+  background: #e8f5ec;
+  border: 1px solid #d9ecde;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.tentang-header h1 {
+  color: var(--hijau-tua);
+}
+
+.tentang-konten {
+  margin-top: 22px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid var(--garis);
+  border-radius: 18px;
+  box-shadow: var(--bayangan);
+  line-height: 1.9;
+}
+
+.tentang-konten h2 {
+  color: var(--hijau-tua);
+}
+
+/* Tampilan tablet */
+@media (max-width: 1000px) {
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .absensi {
+    padding: 0 5px;
+  }
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+  main {
+    padding: 18px 12px 30px;
+  }
+
+  nav {
+    gap: 4px;
+    padding: 12px 8px;
+  }
+
+  nav a {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+
+  .form-absensi {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .form-absensi h2,
+  .judul-tabel h2 {
+    font-size: 19px;
+  }
+
+  .judul-tabel {
+    align-items: flex-start;
+  }
+
+  .beranda {
+    margin: 15px auto;
+    padding: 38px 20px;
+  }
+
+  .beranda h1 {
+    font-size: 27px;
+  }
+
+  .deskripsi-beranda {
+    font-size: 14px;
+  }
+
+  .tentang-konten {
+    padding: 22px 18px;
+  }
+}

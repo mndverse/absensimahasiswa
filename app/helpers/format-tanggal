@@ -1,0 +1,11 @@
+import { helper } from "@ember/component/helper";
+
+export default helper(function formatTanggal([tanggal]) {
+  if (!tanggal) {
+    return "";
+  }
+
+  const [tahun, bulan, hari] = tanggal.split("-");
+
+  return `${hari}-${bulan}-${tahun}`;
+});
