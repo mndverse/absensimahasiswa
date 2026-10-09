@@ -1,6 +1,11 @@
+import Application from '@ember/application';
+import Resolver from 'ember-resolver';
 import config from 'absensi-mahasiswa/config/environment';
+
 import loadInitializers from 'ember-load-initializers';
+
 import { importSync, isDevelopingApp, macroCondition } from '@embroider/macros';
+
 import setupInspector from '@embroider/legacy-inspector-support/ember-source-4.12';
 
 if (macroCondition(isDevelopingApp())) {
@@ -9,9 +14,12 @@ if (macroCondition(isDevelopingApp())) {
 
 export default class App extends Application {
   modulePrefix = config.modulePrefix;
+
   podModulePrefix = config.podModulePrefix;
-  Resolver = Resolver.withModules(compatModules);
+
+  Resolver = Resolver;
+
   inspector = setupInspector(this);
 }
 
-loadInitializers(App, config.modulePrefix, compatModules);
+loadInitializers(App, config.modulePrefix);
