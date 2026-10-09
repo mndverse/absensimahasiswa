@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'tugas-ember',
+    modulePrefix: 'absensi-mahasiswa',
     environment,
     rootURL: '/',
     locationType: 'history',

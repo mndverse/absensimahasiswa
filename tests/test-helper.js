@@ -1,6 +1,6 @@
 import '@warp-drive/ember/install';
-import Application from 'tugas-ember/app';
-import config from 'tugas-ember/config/environment';
+import Application from 'absensi-mahasiswa/app';
+import config from 'absensi-mahasiswa/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

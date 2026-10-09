@@ -1,8 +1,8 @@
 {
-  "name": "tugas-ember",
+  "name": "absensi-mahasiswa",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for tugas-ember goes here",
+  "description": "Sistem Daftar Hadir Mahasiswa",
   "repository": "",
   "license": "MIT",
   "author": "",

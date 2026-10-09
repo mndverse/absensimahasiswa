@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { setupTest } from 'tugas-ember/tests/helpers';
+import { setupTest } from 'absensi-mahasiswa/tests/helpers';
 
 module('Unit | Controller | mahasiswa', function (hooks) {
   setupTest(hooks);
